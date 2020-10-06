@@ -43,3 +43,35 @@ table(colnames(expr_ALL))
 #> BCR/ABL     NEG 
 #>      37      42
 ```
+
+This data set is used in the vignette [Permutation-based post hoc
+inference for differential gene expression
+studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html)
+of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+
+## Neuroimaging data set
+
+``` r
+data("fMRI_localizer", package = "sansSouci.data")
+str(fMRI_localizer)
+#>  num [1:48900, 1:30] -0.0261 0.3612 0.6768 0.0249 1.0796 ...
+#>  - attr(*, "dimnames")=List of 2
+#>   ..$ : NULL
+#>   ..$ : chr [1:30] "left" "left" "left" "left" ...
+```
+
+This data set contains Functional Magnetic Resonance Imaging (fMRI)
+measurements corresponding to two motor tasks from the Localizer data
+set: “left click” and “right click”:
+
+``` r
+table(colnames(fMRI_localizer))
+#> 
+#>  left right 
+#>    15    15
+```
+
+This data set is used in the vignette [Permutation-based post hoc
+inference for fMRI
+studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html)
+of the [sansSouci](https://github.com/pneuvial/sanssouci) package.

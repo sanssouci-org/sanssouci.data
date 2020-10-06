@@ -29,6 +29,7 @@ You can install the development version from [GitHub](https://github.com/) with:
 # install.packages("devtools")
 devtools::install_github("pneuvial/sanssouci.data")
 ```
+
 ## Gene expression data set
 
 
@@ -43,3 +44,20 @@ This data set contains gene expression values for `r nrow(expr_ALL)` genes in `r
 table(colnames(expr_ALL))
 ```
 
+This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+
+## Neuroimaging data set
+
+
+```{r fMRI}
+data("fMRI_localizer", package = "sansSouci.data")
+str(fMRI_localizer)
+```
+
+This data set contains Functional Magnetic Resonance Imaging (fMRI) measurements corresponding to two motor tasks from the Localizer data set: "left click" and "right click":
+
+```{r fMRI-samples}
+table(colnames(fMRI_localizer))
+```
+
+This data set is used in the vignette [Permutation-based post hoc inference for fMRI studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
