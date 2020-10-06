@@ -1,3 +1,5 @@
+# Source: python notebook: [Massively univariate analysis of a motor task from the Localizer dataset](https://nilearn.github.io/auto_examples/05_advanced/plot_localizer_mass_univariate_methods.html#sphx-glr-auto-examples-05-advanced-plot-localizer-mass-univariate-methods-py)
+
 # ---------------
 # setup
 # ---------------

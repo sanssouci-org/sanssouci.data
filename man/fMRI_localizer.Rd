@@ -18,7 +18,7 @@ fMRI_localizer
 Functional Magnetic Resonance Imaging (fMRI) measurements from the Localizer data set
 }
 \details{
-To import this data we Thave used the Python module [nilearn](http://nilearn.github.io/)
+To import this data we have used the Python module [nilearn](http://nilearn.github.io/)
 }
 \references{
 Orfanos, D. P., Michel, V., Schwartz, Y., Pinel, P., Moreno, A., Le Bihan, D., & Frouin, V. (2017). The brainomics/localizer database. Neuroimage, 144, 309-314.
