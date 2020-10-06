@@ -55,10 +55,9 @@ fmri_masked_right = nifti_masker.fit_transform(contrast_map_filenames_right)
 fmri_masked_right=np.transpose(fmri_masked_right)
 #fmri_masked_right.shape
 
-columns_ok_left=["0"]*fmri_masked_left.shape[1]
-columns_ok_right=["1"]*fmri_masked_right.shape[1]
+columns_ok_left=["left"]*fmri_masked_left.shape[1]
+columns_ok_right=["right"]*fmri_masked_right.shape[1]
 columns_ok=columns_ok_left+columns_ok_right
-cols_ok=[[float(columns_ok[i])] for i in range(len(columns_ok))]
 #len(columns_ok)
 
 # ---------------
