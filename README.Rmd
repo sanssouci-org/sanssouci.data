@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# sansSouci.data
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of sansSouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("pneuvial/sanssouci.data")
+```
+## Gene expression data set
+
+
+```{r expr}
+data(expr_ALL, package = "sansSouci.data")
+str(expr_ALL)
+```
+
+This data set contains gene expression values for `r nrow(expr_ALL)` genes in `r ncol(expr_ALL)` cancer samples. These samples correspond to two types of Acute Lymphoblastic Leukemia (ALL):
+
+```{r expr-samples}
+table(colnames(expr_ALL))
+```
+
