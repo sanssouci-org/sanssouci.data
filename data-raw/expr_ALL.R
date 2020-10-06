@@ -1,4 +1,3 @@
-## code to prepare `expr_ALL` dataset goes here
 data("ALL", package = "ALL")
 
 ## Reduce to just two conditions
