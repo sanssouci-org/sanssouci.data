@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # sansSouci.data
 
 <!-- badges: start -->
+[![R build status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
 <!-- badges: end -->
 
 The goal of sansSouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.

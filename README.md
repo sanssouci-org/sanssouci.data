@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
 <!-- badges: end -->
 
 The goal of sansSouci.data is to provide data sets for the
@@ -17,7 +19,7 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("pneuvial/sansSouci.data")
+devtools::install_github("pneuvial/sanssouci.data")
 ```
 
 ## Gene expression data set
