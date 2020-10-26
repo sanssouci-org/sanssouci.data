@@ -1,6 +1,6 @@
 # sansSouci.data 0.2.1
 
-* Added probe annotation data for differntial expression data set.
+* Added probe annotation data for differential expression data set.
 
 # sansSouci.data 0.2.0
 
