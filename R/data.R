@@ -5,14 +5,34 @@ NULL
 #'
 #' @format A numeric matrix with 12625 rows (genes) and 79 columns (cancer samples).
 #' The samples are classified into two subgoups:
-#'  - 37 samples harbor a specific mutation called "BCR/ABL"
-#'  - 42 patients do not have the mutation; they are called "NEG" for 'negative'
+#'  \enumerate{
+#'  \item{37 samples harbor a specific mutation called "BCR/ABL"}
+#'  \item{42 patients do not have the mutation; they are called "NEG" for 'negative'}
+#'  }
 #'  The column names provide the mutational status ("BCR/ABL" or "NEG").
 #'  The row names are gene names (more precisely, probe set ids, which may be mapped to genes)
 #'
 #' @source \url{https://bioconductor.org/packages/ALL/}
 #' @references Sabina Chiaretti, Xiaochun Li, Robert Gentleman, Antonella Vitale, Marco Vignetti, Franco Mandelli, Jerome Ritz, and Robin Foa Gene expression profile of adult T-cell acute lymphocytic leukemia identifies distinct subsets of patients with different response to therapy and survival. Blood, 1 April 2004, Vol. 103, No. 7.
 "expr_ALL"
+
+NULL
+#' Probe annotation data for the hg_u95av2 Affymetrix microarray
+#'
+#' Probe annotation data for Affymetrix Human Genome U95 Set.
+#'
+#' @format A numeric matrix with 10495 rows (probe sets) and 6 columns:
+#'  \describe{
+#'  \item{affy_hg_u95av2}{Affymetrix probe set id, e.g. "1000_at"}
+#'  \item{hgnc_symbol}{HUGO gene symbol, e.g. "MAPK3"}
+#'  \item{chromosome_name}{character value in "1":"22" or "X", "Y"}
+#'  \item{start_position}{start position of the probe set (in bp)}
+#'  \item{end_position}{start position of the probe set (in bp)}
+#'  \item{band}{chromosomal band, e.g. "p11.2"}
+#'  }
+#'
+#' @source \url{https://bioconductor.org/packages/release/data/annotation/html/hgu95av2.html}
+"expr_ALL_annotation"
 
 #' fMRI data for 30 samples from the Localizer data set
 #'

@@ -7,8 +7,10 @@
 \format{
 A numeric matrix with 12625 rows (genes) and 79 columns (cancer samples).
 The samples are classified into two subgoups:
- - 37 samples harbor a specific mutation called "BCR/ABL"
- - 42 patients do not have the mutation; they are called "NEG" for 'negative'
+ \enumerate{
+ \item{37 samples harbor a specific mutation called "BCR/ABL"}
+ \item{42 patients do not have the mutation; they are called "NEG" for 'negative'}
+ }
  The column names provide the mutational status ("BCR/ABL" or "NEG").
  The row names are gene names (more precisely, probe set ids, which may be mapped to genes)
 }

@@ -1,3 +1,7 @@
+# sansSouci.data 0.2.1
+
+* Added probe annotation data for differntial expression data set.
+
 # sansSouci.data 0.2.0
 
 * Added a `NEWS.md` file to track changes to the package.
