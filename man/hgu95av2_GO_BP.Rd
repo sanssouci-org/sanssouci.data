@@ -5,7 +5,7 @@
 \alias{hgu95av2_GO_BP}
 \title{Subset of Gene Ontology terms for the hgu95av2 microarray}
 \format{
-A numeric matrix with 12625 rows (microarray probes) and 83 columns
+A numeric matrix with 12625 rows (microarray probes) and 631 columns
   (GO terms from the Biological Process ontology). Non-zero entries in
   column \eqn{c} indicate the probes corresponding to the \eqn{c}-th GO
   term. The GO ids are stored in the column names of the matrix.
@@ -20,6 +20,6 @@ hgu95av2_GO_BP
 Subset of Gene Ontology terms for the hgu95av2 microarray
 }
 \details{
-Obtained via the Bioconductor packages topGO, hgu95av2.db
+Obtained via the Bioconductor packages topGO, hgu95av2.db.
 }
 \keyword{datasets}
