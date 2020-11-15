@@ -1,3 +1,7 @@
+# sansSouci.data 0.2.2
+
+* Added 'hgu95av2_GO_BP': GO annotation data for chip type "hgu95av2".
+
 # sansSouci.data 0.2.1
 
 * Added probe annotation data for differential expression data set.
