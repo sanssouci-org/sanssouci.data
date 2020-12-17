@@ -43,7 +43,9 @@ way2GO <- function(probeNames, selected, chipType,
 chipType <- "hgu95av2"
 
 ## Biological process
-hgu95av2_GO_BP <- way2GO(probeNames = probeNames, selected = selected, chipType = chipType,
+hgu95av2_GO_BP <- way2GO(probeNames = probeNames,
+                         selected = selected,
+                         chipType = chipType,
       ontology = "BP")
 str(hgu95av2_GO_BP)
 # num [1:12625, 1:631] 0 0 0 0 0 0 0 0 0 0 ...

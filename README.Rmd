@@ -30,8 +30,10 @@ You can install the development version from [GitHub](https://github.com/) with:
 devtools::install_github("pneuvial/sanssouci.data")
 ```
 
-## Gene expression data set
 
+## Data for differential gene expression studies
+
+### Gene expression data set
 
 ```{r expr}
 data(expr_ALL, package = "sansSouci.data")
@@ -45,6 +47,17 @@ table(colnames(expr_ALL))
 ```
 
 This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+
+### Gene annotation
+
+```{r GO}
+data(hgu95av2_GO_BP, package = "sansSouci.data")
+str(hgu95av2_GO_BP)
+```
+
+This data set contains `r ncol(hgu95av2_GO_BP)` Gene Ontology (GO) terms from the Biological Process (BP) ontology. Non-zero entries in column 'c' indicate the probes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
+
+These GO terms are those containing at least an entry whose associated $p$-value of the test of differential expression in the `expr_ALL` data set is less than 0.00001.
 
 ## Neuroimaging data set
 

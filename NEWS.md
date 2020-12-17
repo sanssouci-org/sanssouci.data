@@ -1,6 +1,7 @@
 # sansSouci.data 0.2.2
 
 * Added 'hgu95av2_GO_BP': GO annotation data for chip type "hgu95av2".
+* Now only 4 decimal places for 'fMRI_localizer' data set.
 
 # sansSouci.data 0.2.1
 
