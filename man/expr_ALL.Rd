@@ -5,7 +5,7 @@
 \alias{expr_ALL}
 \title{Gene expression profiles of 79 Acute Lymphoblastic Leukemia samples}
 \format{
-A numeric matrix with 12625 rows (genes) and 79 columns (cancer samples).
+A numeric matrix with 9038 rows (genes) and 79 columns (cancer samples).
 The samples are classified into two subgoups:
  \enumerate{
  \item{37 samples harbor a specific mutation called "BCR/ABL"}

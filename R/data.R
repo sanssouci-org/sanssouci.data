@@ -3,7 +3,7 @@ NULL
 #'
 #' A dataset containing microarray-based gene expression measurements from a cancer study on Acute Lymphoblastic Leukemia.
 #'
-#' @format A numeric matrix with 12625 rows (genes) and 79 columns (cancer samples).
+#' @format A numeric matrix with 9038 rows (genes) and 79 columns (cancer samples).
 #' The samples are classified into two subgoups:
 #'  \enumerate{
 #'  \item{37 samples harbor a specific mutation called "BCR/ABL"}
@@ -17,14 +17,11 @@ NULL
 "expr_ALL"
 
 NULL
-#' Probe annotation data for the hg_u95av2 Affymetrix microarray
+#' Gene annotation data for the expr_ALL data set
 #'
-#' Probe annotation data for Affymetrix Human Genome U95 Set.
-#'
-#' @format A numeric matrix with 10495 rows (probe sets) and 6 columns:
+#' @format A numeric matrix with 9038 rows (genes) and 5 columns:
 #'  \describe{
-#'  \item{affy_hg_u95av2}{Affymetrix probe set id, e.g. "1000_at"}
-#'  \item{hgnc_symbol}{HUGO gene symbol, e.g. "MAPK3"}
+#'  \item{ensembl_gene_id}{ENSEMBL gene id, e.g. "ENSG00000000003"}
 #'  \item{chromosome_name}{character value in "1":"22" or "X", "Y"}
 #'  \item{start_position}{start position of the probe set (in bp)}
 #'  \item{end_position}{start position of the probe set (in bp)}
@@ -83,7 +80,7 @@ NULL
 #'
 #'
 #'
-#' @format A numeric matrix with 12625 rows (microarray probes) and 631 columns
+#' @format A numeric matrix with 9038 rows (microarray probes) and 631 columns
 #'   (GO terms from the Biological Process ontology). Non-zero entries in
 #'   column \eqn{c} indicate the probes corresponding to the \eqn{c}-th GO
 #'   term. The GO ids are stored in the column names of the matrix.
@@ -93,3 +90,16 @@ NULL
 #' @source \url{https://bioconductor.org/packages/hgu95av2.db/}
 #'
 "hgu95av2_GO_BP"
+
+#' Gene Ontology terms for the expr_ALL data set
+#'
+#' @format A numeric matrix with :9038 rows (microarray probes) and 144 columns
+#'   (selected GO terms). Non-zero entries in column \eqn{c} indicate the probes
+#'   corresponding to the \eqn{c}-th GO term. The GO ids are stored in the
+#'   column names of the matrix.
+#'
+#' @details Obtained via the Bioconductor package org.Hs.eg.db
+#'
+#' @source \url{https://bioconductor.org/packages/org.Hs.eg.db/}
+#'
+"expr_ALL_GO"

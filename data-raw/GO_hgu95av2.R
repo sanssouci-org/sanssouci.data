@@ -1,4 +1,5 @@
 library("topGO")
+library("sansSouci")
 
 # data set-specific code to perform ad hoc gene selection
 # (to avoid having too many GO terms)
@@ -48,13 +49,13 @@ hgu95av2_GO_BP <- way2GO(probeNames = probeNames,
                          chipType = chipType,
       ontology = "BP")
 str(hgu95av2_GO_BP)
-# num [1:12625, 1:631] 0 0 0 0 0 0 0 0 0 0 ...
+# num [1:9038, 1:18348] 0 0 0 0 0 0 0 0 0 0 ...
 # - attr(*, "dimnames")=List of 2
-# ..$ : chr [1:12625] "1000_at" "1001_at" "1002_f_at" "1003_s_at" ...
-# ..$ : chr [1:631] "GO:0000278" "GO:0001843" "GO:0001922" "GO:0001934" ...
+# ..$ : chr [1:9038] "ENSG00000000003" "ENSG00000000419" "ENSG00000000457" "ENSG00000000460" ...
+# ..$ : chr [1:18348] "GO:0000002" "GO:0000003" "GO:0000012" "GO:0000017" ...
 hist(colSums(hgu95av2_GO_BP), breaks = 100)
 
-usethis::use_data(hgu95av2_GO_BP, overwrite = TRUE, internal = FALSE)
+#usethis::use_data(hgu95av2_GO_BP, overwrite = TRUE, internal = FALSE)
 
 
 # ## Molecular function
@@ -62,10 +63,6 @@ usethis::use_data(hgu95av2_GO_BP, overwrite = TRUE, internal = FALSE)
 #                          ontology = "MF", minNbProbes = 5)
 # hist(colSums(hgu95av2_GO_MF))
 # str(hgu95av2_GO_MF)
-# # num [1:12625, 1:46] 0 0 0 0 0 0 0 0 0 0 ...
-# # - attr(*, "dimnames")=List of 2
-# # ..$ : chr [1:12625] "1000_at" "1001_at" "1002_f_at" "1003_s_at" ...
-# # ..$ : chr [1:46] "GO:0000287" "GO:0000978" "GO:0000981" "GO:0001228" ...
 # usethis::use_data(hgu95av2_GO_MF, overwrite = TRUE, internal = FALSE)
 #
 #
@@ -74,8 +71,4 @@ usethis::use_data(hgu95av2_GO_BP, overwrite = TRUE, internal = FALSE)
 #                          ontology = "CC", minNbProbes = 5)
 # hist(colSums(hgu95av2_GO_CC))
 # str(hgu95av2_GO_CC)
-# # num [1:12625, 1:47] 0 0 0 0 0 0 0 0 0 0 ...
-# # - attr(*, "dimnames")=List of 2
-# # ..$ : chr [1:12625] "1000_at" "1001_at" "1002_f_at" "1003_s_at" ...
-# # ..$ : chr [1:47] "GO:0000139" "GO:0000790" "GO:0001726" "GO:0005576" ..
 # usethis::use_data(hgu95av2_GO_CC, overwrite = TRUE, internal = FALSE)
