@@ -21,12 +21,15 @@ idx_0 <- which(annot$pathologic_stage == "stage ii")
 idx_1 <- which(annot$pathologic_stage == "stage iii")
 s_0 <- rownames(annot)[idx_0]
 s_1 <- rownames(annot)[idx_1]
+s_0 <- sample(s_0, length(idx_0)/2)
+s_1 <- sample(s_1, length(idx_1)/2)
 
 X0 <- X[, match(s_0, colnames(X))]
 X1 <- X[, match(s_1, colnames(X))]
 Y <- cbind(X0, X1)
 
-groups <- rep(c(0, 1), times = c(ncol(X0), ncol(X1)))
+groups <- rep(c("stage ii", "stage iii"), times = c(ncol(X0), ncol(X1)))
+table(groups)
 
 # drop 0 genes
 ww <- which(rowSums(Y) == 0)
