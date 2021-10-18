@@ -3,28 +3,33 @@
 \docType{data}
 \name{RNAseq_blca}
 \alias{RNAseq_blca}
-\title{Bulk RNAseq matrix of the Cancer Genome Atlas Urothelial Bladder Carcinoma (TCGA-BLCA)}
+\title{Gene expression profiles (RNAseq) of 135 Urothelial Bladder Carcinoma}
 \format{
-A numeric matrix with :20146 rows (gens) and 135 columns
-  (cancer samples). The samples are classified into two subgoups:
- \enumerate{
- \item{65 samples are in stage ii of an Urothelial Bladder Carcinoma cancer}
- \item{70 samples are in stage iii of an Urothelial Bladder Carcinoma cancer}
- }
- The column names provide the mutational status ("stage ii" or "stage iii").
- The row names are gene names
-}
-\source{
-\url{https://www.cancer.org/cancer/bladder-cancer/detection-diagnosis-staging/staging.html}
+A numeric matrix with 20,073 rows (genes) and 135 columns (cancer
+  samples). The samples are classified into two subgoups corresponding to two
+  different clinical stages corresponding to the invasiveness of the cancer:
+  stage II (65 samples) and stage III (70 samples). Column names are "II" or
+  "III", corresponding to the cancer stage. Row names are gene names.
 }
 \usage{
 RNAseq_blca
 }
 \description{
-Bulk RNAseq matrix of the Cancer Genome Atlas Urothelial Bladder Carcinoma (TCGA-BLCA)
+A dataset containing sequencing-based gene expression measurements from a
+cancer study on Urothelial Bladder Carcinoma from the Cancer Genome Atlas.
 }
 \details{
-Obtained via R packages [curatedTCGAData](https://bioconductor.org/packages/release/data/experiment/html/curatedTCGAData.html)
- and [TCGAutils](https://bioconductor.org/packages/release/bioc/html/TCGAutils.html)
+Obtained via R packages
+  [curatedTCGAData](https://bioconductor.org/packages/release/data/experiment/html/curatedTCGAData.html)
+   and
+  [TCGAutils](https://bioconductor.org/packages/release/bioc/html/TCGAutils.html)
+}
+\references{
+Cancer Genome Atlas Research Network. (2014). Comprehensive
+  molecular characterization of urothelial bladder carcinoma. Nature,
+  507(7492), 315
+}
+\seealso{
+\url{https://www.cancer.org/cancer/bladder-cancer/detection-diagnosis-staging/staging.html}
 }
 \keyword{datasets}
