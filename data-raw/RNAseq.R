@@ -36,8 +36,8 @@ ww <- which(rowSums(Y) == 0)
 length(ww)
 Y <- Y[-ww, ]
 
-bulkRNAseq <- as.matrix(Y)
-colnames(bulkRNAseq) <- groups
+RNAseq_blca <- as.matrix(Y)
+colnames(RNAseq_blca) <- groups
 
 
-usethis::use_data(bulkRNAseq, overwrite = TRUE, internal = FALSE)
+usethis::use_data(RNAseq_blca, overwrite = TRUE, internal = FALSE)

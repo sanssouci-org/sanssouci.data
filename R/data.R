@@ -119,6 +119,4 @@ NULL
 #'  and [TCGAutils](https://bioconductor.org/packages/release/bioc/html/TCGAutils.html)
 #'
 #' @source \url{https://www.cancer.org/cancer/bladder-cancer/detection-diagnosis-staging/staging.html}
-#' @references Sabina Chiaretti, Xiaochun Li, Robert Gentleman, Antonella Vitale, Marco Vignetti, Franco Mandelli, Jerome Ritz, and Robin Foa Gene expression profile of adult T-cell acute lymphocytic leukemia identifies distinct subsets of patients with different response to therapy and survival. Blood, 1 April 2004, Vol. 103, No. 7.
-
-"bulkRNAseq"
+"RNAseq_blca"
