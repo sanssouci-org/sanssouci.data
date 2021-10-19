@@ -104,15 +104,15 @@ NULL
 #'
 "expr_ALL_GO"
 
-#' Gene expression profiles (RNAseq) of 135 Urothelial Bladder Carcinoma
+#' Gene expression profiles (RNAseq) of 270 Urothelial Bladder Carcinoma
 #'
 #' A dataset containing sequencing-based gene expression measurements from a
 #' cancer study on Urothelial Bladder Carcinoma from the Cancer Genome Atlas.
 #'
-#' @format A numeric matrix with 20,073 rows (genes) and 135 columns (cancer
+#' @format A numeric matrix with 20,073 rows (genes) and 270 columns (cancer
 #'   samples). The samples are classified into two subgoups corresponding to two
 #'   different clinical stages corresponding to the invasiveness of the cancer:
-#'   stage II (65 samples) and stage III (70 samples). Column names are "II" or
+#'   stage II (130 samples) and stage III (140 samples). Column names are "II" or
 #'   "III", corresponding to the cancer stage. Row names are gene names.
 #'
 #' @details Obtained via R packages

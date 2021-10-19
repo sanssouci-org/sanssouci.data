@@ -3,12 +3,12 @@
 \docType{data}
 \name{RNAseq_blca}
 \alias{RNAseq_blca}
-\title{Gene expression profiles (RNAseq) of 135 Urothelial Bladder Carcinoma}
+\title{Gene expression profiles (RNAseq) of 270 Urothelial Bladder Carcinoma}
 \format{
-A numeric matrix with 20,073 rows (genes) and 135 columns (cancer
+A numeric matrix with 20,073 rows (genes) and 270 columns (cancer
   samples). The samples are classified into two subgoups corresponding to two
   different clinical stages corresponding to the invasiveness of the cancer:
-  stage II (65 samples) and stage III (70 samples). Column names are "II" or
+  stage II (130 samples) and stage III (140 samples). Column names are "II" or
   "III", corresponding to the cancer stage. Row names are gene names.
 }
 \usage{
