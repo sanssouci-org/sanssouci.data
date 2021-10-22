@@ -31,7 +31,7 @@ devtools::install_github("pneuvial/sanssouci.data")
 ```
 
 
-## Data for differential gene expression studies
+## Data for differential gene expression studies (microarrays)
 
 ### Gene expression data set
 
@@ -58,6 +58,23 @@ str(hgu95av2_GO_BP)
 This data set contains `r ncol(hgu95av2_GO_BP)` Gene Ontology (GO) terms from the Biological Process (BP) ontology. Non-zero entries in column 'c' indicate the probes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
 
 These GO terms are those containing at least an entry whose associated $p$-value of the test of differential expression in the `expr_ALL` data set is less than 0.00001.
+
+## Data for differential gene expression studies (RNA sequencing)
+
+### Gene expression data set
+
+```{r RNAseq}
+data("RNAseq_blca", package = "sansSouci.data")
+str(RNAseq_blca)
+```
+
+
+This data set contains gene expression values for `r nrow(RNAseq_blca)` genes in `r ncol(RNAseq_blca)` cancer samples. These samples correspond to urothelial bladder cancer samples with two different stages:
+
+```{r RNAseq-samples}
+table(colnames(RNAseq_blca))
+```
+
 
 ## Neuroimaging data set
 

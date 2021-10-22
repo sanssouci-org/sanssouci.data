@@ -105,3 +105,29 @@ NULL
 #' @source \url{https://bioconductor.org/packages/org.Hs.eg.db/}
 #'
 "expr_ALL_GO"
+
+#' Gene expression profiles (RNAseq) of 270 Urothelial Bladder Carcinoma
+#'
+#' A dataset containing sequencing-based gene expression measurements from a
+#' cancer study on Urothelial Bladder Carcinoma from the Cancer Genome Atlas.
+#'
+#' @format A numeric matrix with 20,073 rows (genes) and 270 columns (cancer
+#'   samples). The samples are classified into two subgoups corresponding to two
+#'   different clinical stages corresponding to the invasiveness of the cancer:
+#'   stage II (130 samples) and stage III (140 samples). Column names are "II" or
+#'   "III", corresponding to the cancer stage. Row names are gene names.
+#'
+#' @details Obtained via R packages
+#'   [curatedTCGAData](https://bioconductor.org/packages/release/data/experiment/html/curatedTCGAData.html)
+#'    and
+#'   [TCGAutils](https://bioconductor.org/packages/release/bioc/html/TCGAutils.html)
+#'
+#'
+#' @references Cancer Genome Atlas Research Network. (2014). Comprehensive
+#'   molecular characterization of urothelial bladder carcinoma. Nature,
+#'   507(7492), 315
+#'
+#' @seealso
+#' \url{https://www.cancer.org/cancer/bladder-cancer/detection-diagnosis-staging/staging.html}
+#'
+"RNAseq_blca"

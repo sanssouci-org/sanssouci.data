@@ -1,3 +1,9 @@
+# sansSouci.data 0.4.0
+
+* Added 'RNAseq_blca': bulk RNA sequencing data, bladder cancer from TCGA.  
+* Updated README.
+* Added NEC to package authors.
+
 # sansSouci.data 0.3.0
 
 * Updated 'expr_ALL': now *gene*-level instead of probe set level. 
