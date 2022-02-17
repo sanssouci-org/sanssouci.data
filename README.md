@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# sansSouci.data
+# sanssouci.data
 
 <!-- badges: start -->
 
@@ -9,7 +9,7 @@
 status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
 <!-- badges: end -->
 
-The goal of sansSouci.data is to provide data sets for the
+The goal of sanssouci.data is to provide data sets for the
 [sansSouci](https://github.com/pneuvial/sanssouci) package.
 
 ## Installation
@@ -27,7 +27,7 @@ devtools::install_github("pneuvial/sanssouci.data")
 ### Gene expression data set
 
 ``` r
-data(expr_ALL, package = "sansSouci.data")
+data(expr_ALL, package = "sanssouci.data")
 str(expr_ALL)
 #>  num [1:9038, 1:79] 3.88 7.59 4.47 3.39 7.03 ...
 #>  - attr(*, "dimnames")=List of 2
@@ -54,7 +54,7 @@ of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
 ### Gene annotation
 
 ``` r
-data(hgu95av2_GO_BP, package = "sansSouci.data")
+data(hgu95av2_GO_BP, package = "sanssouci.data")
 str(hgu95av2_GO_BP)
 #>  num [1:9038, 1:18348] 0 0 0 0 0 0 0 0 0 0 ...
 #>  - attr(*, "dimnames")=List of 2
@@ -76,15 +76,15 @@ data set is less than 0.00001.
 ### Gene expression data set
 
 ``` r
-data("RNAseq_blca", package = "sansSouci.data")
+data("RNAseq_blca", package = "sanssouci.data")
 str(RNAseq_blca)
-#>  num [1:20073, 1:135] 54.301 0 0.349 183.744 891.251 ...
+#>  num [1:20196, 1:270] 426.7 0 0 98.8 1183.2 ...
 #>  - attr(*, "dimnames")=List of 2
-#>   ..$ : chr [1:20073] "A1BG" "A1CF" "A2BP1" "A2LD1" ...
-#>   ..$ : chr [1:135] "II" "II" "II" "II" ...
+#>   ..$ : chr [1:20196] "A1BG" "A1CF" "A2BP1" "A2LD1" ...
+#>   ..$ : chr [1:270] "II" "II" "II" "II" ...
 ```
 
-This data set contains gene expression values for 20073 genes in 135
+This data set contains gene expression values for 20196 genes in 270
 cancer samples. These samples correspond to urothelial bladder cancer
 samples with two different stages:
 
@@ -92,13 +92,13 @@ samples with two different stages:
 table(colnames(RNAseq_blca))
 #> 
 #>  II III 
-#>  65  70
+#> 130 140
 ```
 
 ## Neuroimaging data set
 
 ``` r
-data("fMRI_localizer", package = "sansSouci.data")
+data("fMRI_localizer", package = "sanssouci.data")
 str(fMRI_localizer)
 #>  num [1:48900, 1:30] -0.0261 0.3612 0.6768 0.0249 1.0796 ...
 #>  - attr(*, "dimnames")=List of 2
