@@ -13,13 +13,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-# sansSouci.data
+# sanssouci.data
 
 <!-- badges: start -->
 [![R build status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
 <!-- badges: end -->
 
-The goal of sansSouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+The goal of sanssouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.
 
 ## Installation
 
@@ -36,7 +36,7 @@ devtools::install_github("pneuvial/sanssouci.data")
 ### Gene expression data set
 
 ```{r expr}
-data(expr_ALL, package = "sansSouci.data")
+data(expr_ALL, package = "sanssouci.data")
 str(expr_ALL)
 ```
 
@@ -51,7 +51,7 @@ This data set is used in the vignette [Permutation-based post hoc inference for 
 ### Gene annotation
 
 ```{r GO}
-data(hgu95av2_GO_BP, package = "sansSouci.data")
+data(hgu95av2_GO_BP, package = "sanssouci.data")
 str(hgu95av2_GO_BP)
 ```
 
@@ -64,7 +64,7 @@ These GO terms are those containing at least an entry whose associated $p$-value
 ### Gene expression data set
 
 ```{r RNAseq}
-data("RNAseq_blca", package = "sansSouci.data")
+data("RNAseq_blca", package = "sanssouci.data")
 str(RNAseq_blca)
 ```
 
@@ -80,7 +80,7 @@ table(colnames(RNAseq_blca))
 
 
 ```{r fMRI}
-data("fMRI_localizer", package = "sansSouci.data")
+data("fMRI_localizer", package = "sanssouci.data")
 str(fMRI_localizer)
 ```
 
