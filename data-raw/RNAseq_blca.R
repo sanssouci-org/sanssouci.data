@@ -5,7 +5,6 @@ library("TCGAutils")
 blca <- curatedTCGAData("BLCA", "RNA*", dry.run = FALSE)
 head(getSubtypeMap(blca))
 annot <- colData(blca)[, getClinicalNames("BLCA")]
-blca <- blca[[1]]
 
 X <- assays(blca)[[1]]
 str(X)
@@ -21,11 +20,6 @@ idx_0 <- which(annot$pathologic_stage == "stage ii")
 idx_1 <- which(annot$pathologic_stage == "stage iii")
 s_0 <- rownames(annot)[idx_0]
 s_1 <- rownames(annot)[idx_1]
-
-## take only half of the samples (too large data set otherwise)
-# set.seed(20211018)
-# s_0 <- sample(s_0, length(idx_0)/2)
-# s_1 <- sample(s_1, length(idx_1)/2)
 
 X0 <- X[, match(s_0, colnames(X))]
 X1 <- X[, match(s_1, colnames(X))]

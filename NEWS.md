@@ -1,3 +1,7 @@
+# sanssouci.data 0.5.0
+
+* Renamed to sanssouci.data
+ 
 # sansSouci.data 0.4.0
 
 * Added 'RNAseq_blca': bulk RNA sequencing data, bladder cancer from TCGA.  
