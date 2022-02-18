@@ -10,7 +10,7 @@ status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.s
 <!-- badges: end -->
 
 The goal of sanssouci.data is to provide data sets for the
-[sansSouci](https://github.com/pneuvial/sanssouci) package.
+[sanssouci](https://github.com/pneuvial/sanssouci) package.
 
 ## Installation
 
@@ -49,7 +49,7 @@ table(colnames(expr_ALL))
 This data set is used in the vignette [Permutation-based post hoc
 inference for differential gene expression
 studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html)
-of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
 
 ### Gene annotation
 
@@ -120,4 +120,4 @@ table(colnames(fMRI_localizer))
 This data set is used in the vignette [Permutation-based post hoc
 inference for fMRI
 studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html)
-of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+of the [sanssouci](https://github.com/pneuvial/sanssouci) package.

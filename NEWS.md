@@ -1,6 +1,8 @@
 # sanssouci.data 0.5.0
 
+* Package sanssouci renamed to sanssouci
 * Renamed to sanssouci.data
+
  
 # sansSouci.data 0.4.0
 

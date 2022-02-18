@@ -1,6 +1,6 @@
 Package: sanssouci.data
 Type: Package
-Title: Companion Data Package For The sansSouci Package
+Title: Companion Data Package For The sanssouci Package
 Date: 2022-02-18
 Version: 0.5.0
 Authors@R: c(person("Pierre", "Neuvial", role=c("aut", "cre"),

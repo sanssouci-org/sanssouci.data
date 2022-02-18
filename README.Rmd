@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
 <!-- badges: end -->
 
-The goal of sanssouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+The goal of sanssouci.data is to provide data sets for the [sanssouci](https://github.com/pneuvial/sanssouci) package.
 
 ## Installation
 
@@ -46,7 +46,7 @@ This data set contains gene expression values for `r nrow(expr_ALL)` genes in `r
 table(colnames(expr_ALL))
 ```
 
-This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
 
 ### Gene annotation
 
@@ -90,4 +90,4 @@ This data set contains Functional Magnetic Resonance Imaging (fMRI) measurements
 table(colnames(fMRI_localizer))
 ```
 
-This data set is used in the vignette [Permutation-based post hoc inference for fMRI studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+This data set is used in the vignette [Permutation-based post hoc inference for fMRI studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html) of the [sanssouci](https://github.com/pneuvial/sanssouci) package.

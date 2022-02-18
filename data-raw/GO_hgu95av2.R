@@ -1,5 +1,5 @@
 library("topGO")
-library("sansSouci")
+library("sanssouci")
 
 # data set-specific code to perform ad hoc gene selection
 # (to avoid having too many GO terms)
@@ -7,7 +7,7 @@ data(expr_ALL)
 dat <- expr_ALL
 rm(expr_ALL)
 categ <- ifelse(colnames(dat) == "BCR/ABL", 1, 0) # map to 0/1
-dex <- data.frame(sansSouci::rowWelchTests(dat, categ))
+dex <- data.frame(sanssouci::rowWelchTests(dat, categ))
 probeNames <- rownames(dex)
 nbProbes <- length(probeNames)
 
