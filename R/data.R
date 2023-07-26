@@ -15,7 +15,6 @@ NULL
 #' @source \url{https://bioconductor.org/packages/ALL/}
 #' @references Sabina Chiaretti, Xiaochun Li, Robert Gentleman, Antonella Vitale, Marco Vignetti, Franco Mandelli, Jerome Ritz, and Robin Foa Gene expression profile of adult T-cell acute lymphocytic leukemia identifies distinct subsets of patients with different response to therapy and survival. Blood, 1 April 2004, Vol. 103, No. 7.
 #' @references Andrew D Yates et al (2020). Ensembl 2020. Nucleic acids research, 48(D1), D682-D688.
-#'  The row names are gene names (more precisely, probe set ids, which may be mapped to genes)
 "expr_ALL"
 
 NULL
@@ -25,8 +24,8 @@ NULL
 #'  \describe{
 #'  \item{ensembl_gene_id}{ENSEMBL gene id, e.g. "ENSG00000000003"}
 #'  \item{chromosome_name}{character value in "1":"22" or "X", "Y"}
-#'  \item{start_position}{start position of the probe set (in bp)}
-#'  \item{end_position}{start position of the probe set (in bp)}
+#'  \item{start_position}{start position of the gene (in bp)}
+#'  \item{end_position}{start position of the gene (in bp)}
 #'  \item{band}{chromosomal band, e.g. "p11.2"}
 #'  }
 #'
@@ -80,11 +79,9 @@ NULL
 
 #' Subset of Gene Ontology terms for the hgu95av2 microarray
 #'
-#'
-#'
-#' @format A numeric matrix with 9038 rows (microarray probes) and 631 columns
+#' @format A numeric matrix with 9038 rows (genes) and 631 columns
 #'   (GO terms from the Biological Process ontology). Non-zero entries in
-#'   column \eqn{c} indicate the probes corresponding to the \eqn{c}-th GO
+#'   column \eqn{c} indicate the genes corresponding to the \eqn{c}-th GO
 #'   term. The GO ids are stored in the column names of the matrix.
 #'
 #' @details Obtained via the Bioconductor packages topGO, hgu95av2.db.
@@ -93,12 +90,12 @@ NULL
 #'
 "hgu95av2_GO_BP"
 
-#' Gene Ontology terms for the expr_ALL data set
+#' Selected Gene Ontology terms for the expr_ALL data set
 #'
-#' @format A numeric matrix with :9038 rows (microarray probes) and 144 columns
-#'   (selected GO terms). Non-zero entries in column \eqn{c} indicate the probes
-#'   corresponding to the \eqn{c}-th GO term. The GO ids are stored in the
-#'   column names of the matrix.
+#' @format A numeric matrix with 9038 rows (genes) and 144 columns (selected GO
+#'   terms). Non-zero entries in column \eqn{c} indicate the genes corresponding
+#'   to the \eqn{c}-th GO term. The GO ids are stored in the column names of the
+#'   matrix.
 #'
 #' @details Obtained via the Bioconductor package org.Hs.eg.db
 #'
@@ -131,3 +128,17 @@ NULL
 #' \url{https://www.cancer.org/cancer/bladder-cancer/detection-diagnosis-staging/staging.html}
 #'
 "RNAseq_blca"
+
+#' Selected Gene Ontology terms for the RNAseq_blca data set
+#'
+#' @format A numeric matrix with 20196 rows (genes) and 362 columns (selected GO
+#'   terms). Non-zero entries in column \eqn{c} indicate the genes
+#'   corresponding to the \eqn{c}-th GO term. The GO ids are stored in the
+#'   column names of the matrix.
+#'
+#' @details Obtained via the Bioconductor package org.Hs.eg.db
+#'
+#' @source \url{https://bioconductor.org/packages/org.Hs.eg.db/}
+#'
+"RNAseq_blca_GO"
+
