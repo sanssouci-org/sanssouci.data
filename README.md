@@ -4,7 +4,6 @@
 # sanssouci.data
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
