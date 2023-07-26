@@ -59,19 +59,3 @@ str(RNAseq_blca_GO)
 # ..$ : chr [1:20196] "A1BG" "A1CF" "A2BP1" "A2LD1" ...
 # ..$ : chr [1:362] "GO:0000139" "GO:0000165" "GO:0000166" "GO:0000228" ...
 usethis::use_data(RNAseq_blca_GO, overwrite = TRUE, internal = FALSE)
-
-
-# retrieve GO TERM (label)
-library("GO.db")
-keytypes(GO.db)
-goat <- select(GO.db, keys=colnames(go), columns="TERM", keytype="GOID")
-head(goat)
-
-url_pre <- "https://www.ebi.ac.uk/QuickGO/term/"
-names(goat) <- c("id", "label")
-goat$url <- paste0(url_pre, goat$id)
-
-dim(goat)
-
-
-# query ENSEMBL: http://www.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000097007

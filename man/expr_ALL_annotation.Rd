@@ -9,8 +9,8 @@ A numeric matrix with 9038 rows (genes) and 5 columns:
  \describe{
  \item{ensembl_gene_id}{ENSEMBL gene id, e.g. "ENSG00000000003"}
  \item{chromosome_name}{character value in "1":"22" or "X", "Y"}
- \item{start_position}{start position of the probe set (in bp)}
- \item{end_position}{start position of the probe set (in bp)}
+ \item{start_position}{start position of the gene (in bp)}
+ \item{end_position}{start position of the gene (in bp)}
  \item{band}{chromosomal band, e.g. "p11.2"}
  }
 }
