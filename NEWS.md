@@ -1,6 +1,14 @@
+# sanssouci.data 0.6.0
+
+* Added 'RNAseq_blca_GO': GO annotation data associated to RNAseq data set.
+* Updated documentation and tests accordingly.
+* Updated file names for GO annotation data sets creation.
+
 # sanssouci.data 0.5.0
 
+* Package sanssouci renamed to sanssouci
 * Renamed to sanssouci.data
+
  
 # sansSouci.data 0.4.0
 

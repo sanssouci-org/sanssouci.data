@@ -16,10 +16,10 @@ knitr::opts_chunk$set(
 # sanssouci.data
 
 <!-- badges: start -->
-[![R build status](https://github.com/pneuvial/sanssouci.data/workflows/R-CMD-check/badge.svg)](https://github.com/pneuvial/sanssouci.data/actions)
+[![R-CMD-check](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of sanssouci.data is to provide data sets for the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+The goal of sanssouci.data is to provide data sets for the [sanssouci](https://github.com/pneuvial/sanssouci) package.
 
 ## Installation
 
@@ -46,18 +46,35 @@ This data set contains gene expression values for `r nrow(expr_ALL)` genes in `r
 table(colnames(expr_ALL))
 ```
 
-This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+This data set is used in the vignette [Permutation-based post hoc inference for differential gene expression studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html) of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
 
-### Gene annotation
+### Gene Ontology (BP)
 
-```{r GO}
+```{r GO-BP}
 data(hgu95av2_GO_BP, package = "sanssouci.data")
 str(hgu95av2_GO_BP)
 ```
 
-This data set contains `r ncol(hgu95av2_GO_BP)` Gene Ontology (GO) terms from the Biological Process (BP) ontology. Non-zero entries in column 'c' indicate the probes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
+This data set contains all `r ncol(hgu95av2_GO_BP)` Gene Ontology (GO) terms from the Biological Process (BP) ontology. Non-zero entries in column 'c' indicate the genes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
 
-These GO terms are those containing at least an entry whose associated $p$-value of the test of differential expression in the `expr_ALL` data set is less than 0.00001.
+### Gene Ontology (for a subset of genes)
+
+```{r GO}
+data("expr_ALL_GO", package = "sanssouci.data")
+str(expr_ALL_GO)
+```
+
+This data set contains `r ncol(expr_ALL_GO)` Gene Ontology (GO) terms (not only from the BP ontology). Non-zero entries in column 'c' indicate the genes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
+
+These GO terms are those containing at least an entry whose associated $p$-value of the test of differential expression in the `expr_ALL` data set is less than 0.0001.
+
+### Genome positions
+
+```{r probe-annotation}
+data("expr_ALL_annotation", package = "sanssouci.data")
+head(expr_ALL_annotation)
+```
+This data set contains the chromosome, start and end position of each of the genes in the `expr_ALL` data set.
 
 ## Data for differential gene expression studies (RNA sequencing)
 
@@ -75,6 +92,17 @@ This data set contains gene expression values for `r nrow(RNAseq_blca)` genes in
 table(colnames(RNAseq_blca))
 ```
 
+### Gene Ontology (for a subset of genes)
+
+```{r GO-RNAseq}
+data("RNAseq_blca_GO", package = "sanssouci.data")
+str(RNAseq_blca_GO)
+```
+
+This data set contains `r ncol(RNAseq_blca_GO)` Gene Ontology (GO) terms. Non-zero entries in column 'c' indicate the genes corresponding to the 'c'-th GO term. The GO ids are stored in the column names of the matrix.  
+
+These GO terms are those containing at least an entry whose associated $p$-value of the test of differential expression in the `RNAseq_blca` data set is less than 0.0001.
+
 
 ## Neuroimaging data set
 
@@ -90,4 +118,4 @@ This data set contains Functional Magnetic Resonance Imaging (fMRI) measurements
 table(colnames(fMRI_localizer))
 ```
 
-This data set is used in the vignette [Permutation-based post hoc inference for fMRI studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html) of the [sansSouci](https://github.com/pneuvial/sanssouci) package.
+This data set is used in the vignette [Permutation-based post hoc inference for fMRI studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html) of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
