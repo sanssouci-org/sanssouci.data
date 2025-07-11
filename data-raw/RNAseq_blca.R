@@ -2,7 +2,7 @@ library("curatedTCGAData")
 library("TCGAutils")
 
 # 1 - get bulk RNAseq data
-blca <- curatedTCGAData("BLCA", "RNA*", dry.run = FALSE)
+blca <- curatedTCGAData("BLCA", "RNA*", dry.run = FALSE, version = "2.1.1")
 head(getSubtypeMap(blca))
 annot <- colData(blca)[, getClinicalNames("BLCA")]
 
