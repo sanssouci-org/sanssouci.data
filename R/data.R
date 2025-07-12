@@ -142,23 +142,30 @@ NULL
 #'
 "RNAseq_blca_GO"
 
-#' Gene expression profiles of 136 samples of chronic obstructive pulmonary disease.
+#' Gene expression profiles of 136 samples of chronic obstructive pulmonary
+#' disease.
 #'
 #' A dataset containing microarray-based gene expression measurements from a
 #' study on chronic obstructive pulmonary disease (COPD).
 #'
-#' @format A numeric matrix with 12,531 rows (genes) and 135 columns ( samples).
+#' @format A numeric matrix with 12,531 rows (genes) and 135 columns (samples).
 #' @details Obtained via the Bioconductor package GEOquery
 #' @source \url{https://bioconductor.org/packages/GEOquery/}
-#' @references Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and Molecular Biology 49 (2): 316–23.
+#' @seealso [expr_COPD_design]
+#' @references Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick
+#'   Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et
+#'   al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic
+#'   Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and
+#'   Molecular Biology 49 (2): 316–23.
 "expr_COPD"
 
-#' Gene expression profiles of 135 samples of chronic obstructive pulmonary disease.
+#' Design matrix  of COPD dataset.
 #'
-#' A dataset containing the design matrix from a study on chronic obstructive pulmonary disease (COPD).
+#' A dataset containing the design matrix from a study on chronic obstructive
+#' pulmonary disease (COPD).
 #'
 #' @format A numeric matrix with 135 rows (samples) and 11 columns (variables).
-#' The variables are:
+#'   The variables are:
 #'  \describe{
 #'  \item{group}{charactor. Two modalities variable coding "COPD" and "Control"}
 #'  \item{age_enroll}{Numeric. Age of the participant (in years) at the time of enrollment in the study.}
@@ -179,5 +186,10 @@ NULL
 #'
 #' @details Obtained via the Bioconductor package GEOquery
 #' @source \url{https://bioconductor.org/packages/GEOquery/}
-#' @references Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and Molecular Biology 49 (2): 316–23.
+#' @seealso [expr_COPD]
+#' @references Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick
+#'   Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et
+#'   al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic
+#'   Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and
+#'   Molecular Biology 49 (2): 316–23.
 "expr_COPD_design"

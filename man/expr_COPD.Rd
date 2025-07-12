@@ -3,9 +3,10 @@
 \docType{data}
 \name{expr_COPD}
 \alias{expr_COPD}
-\title{Gene expression profiles of 136 samples of chronic obstructive pulmonary disease.}
+\title{Gene expression profiles of 136 samples of chronic obstructive pulmonary
+disease.}
 \format{
-A numeric matrix with 12,531 rows (genes) and 135 columns ( samples).
+A numeric matrix with 12,531 rows (genes) and 135 columns (samples).
 }
 \source{
 \url{https://bioconductor.org/packages/GEOquery/}
@@ -21,6 +22,13 @@ study on chronic obstructive pulmonary disease (COPD).
 Obtained via the Bioconductor package GEOquery
 }
 \references{
-Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and Molecular Biology 49 (2): 316–23.
+Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick
+  Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et
+  al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic
+  Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and
+  Molecular Biology 49 (2): 316–23.
+}
+\seealso{
+[expr_COPD_design]
 }
 \keyword{datasets}

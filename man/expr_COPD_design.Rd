@@ -3,10 +3,10 @@
 \docType{data}
 \name{expr_COPD_design}
 \alias{expr_COPD_design}
-\title{Gene expression profiles of 135 samples of chronic obstructive pulmonary disease.}
+\title{Design matrix  of COPD dataset.}
 \format{
 A numeric matrix with 135 rows (samples) and 11 columns (variables).
-The variables are:
+  The variables are:
  \describe{
  \item{group}{charactor. Two modalities variable coding "COPD" and "Control"}
  \item{age_enroll}{Numeric. Age of the participant (in years) at the time of enrollment in the study.}
@@ -31,12 +31,20 @@ The variables are:
 expr_COPD_design
 }
 \description{
-A dataset containing the design matrix from a study on chronic obstructive pulmonary disease (COPD).
+A dataset containing the design matrix from a study on chronic obstructive
+pulmonary disease (COPD).
 }
 \details{
 Obtained via the Bioconductor package GEOquery
 }
 \references{
-Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and Molecular Biology 49 (2): 316–23.
+Bahr, Timothy M, Grant J Hughes, Michael Armstrong, Rick
+  Reisdorph, Christopher D Coldren, Michael G Edwards, Christina Schnell, et
+  al. 2013. “Peripheral Blood Mononuclear Cell Gene Expression in Chronic
+  Obstructive Pulmonary Disease.” American Journal of Respiratory Cell and
+  Molecular Biology 49 (2): 316–23.
+}
+\seealso{
+[expr_COPD]
 }
 \keyword{datasets}
