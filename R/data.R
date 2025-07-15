@@ -164,7 +164,7 @@ NULL
 #' A dataset containing the design matrix from a study on chronic obstructive
 #' pulmonary disease (COPD).
 #'
-#' @format A numeric matrix with 135 rows (samples) and 11 columns (variables).
+#' @format A numeric matrix with 136 rows (samples) and 11 columns (variables).
 #'   The variables are:
 #'  \describe{
 #'  \item{group}{charactor. Two modalities variable coding "COPD" and "Control"}
