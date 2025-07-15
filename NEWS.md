@@ -1,3 +1,9 @@
+# sanssouci.data 0.7.0
+
+* Added 'expr_COPD' and 'expr_COPD_design': microarray expression data set with 
+an associated design matrix. 
+* Updated documentation and tests accordingly.
+
 # sanssouci.data 0.6.0
 
 * Added 'RNAseq_blca_GO': GO annotation data associated to RNAseq data set.

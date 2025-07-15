@@ -4,11 +4,12 @@
 # sanssouci.data
 
 <!-- badges: start -->
+
 [![R-CMD-check](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sanssouci-org/sanssouci.data/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of sanssouci.data is to provide data sets for the
-[sanssouci](https://github.com/pneuvial/sanssouci) package.
+[sanssouci](https://github.com/sanssouci-org/sanssouci) package.
 
 ## Installation
 
@@ -17,7 +18,7 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("pneuvial/sanssouci.data")
+devtools::install_github("sanssouci-org/sanssouci.data")
 ```
 
 ## Data for differential gene expression studies (microarrays)
@@ -46,8 +47,8 @@ table(colnames(expr_ALL))
 
 This data set is used in the vignette [Permutation-based post hoc
 inference for differential gene expression
-studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_differential-expression.html)
-of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
+studies](https://sanssouci-org.github.io/sanssouci/articles/post-hoc_differential-expression.html)
+of the [sanssouci](https://github.com/sanssouci-org/sanssouci) package.
 
 ### Gene Ontology (BP)
 
@@ -169,5 +170,5 @@ table(colnames(fMRI_localizer))
 
 This data set is used in the vignette [Permutation-based post hoc
 inference for fMRI
-studies](https://pneuvial.github.io/sanssouci/articles/post-hoc_fMRI.html)
-of the [sanssouci](https://github.com/pneuvial/sanssouci) package.
+studies](https://sanssouci-org.github.io/sanssouci/articles/post-hoc_fMRI.html)
+of the [sanssouci](https://github.com/sanssouci-org/sanssouci) package.
